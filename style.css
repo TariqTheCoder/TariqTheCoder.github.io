@@ -78,7 +78,8 @@ sup {
 table {
     text-indent: 0;
     border-color: inherit;
-    border-collapse: collapse
+    border-collapse: collapse;
+    color: white
 }
 
 button,input,optgroup,select,textarea {
