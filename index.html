@@ -1,1 +1,587 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charSet="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+        <meta name="description" content="Team 3132 Thunder Down Under"/>
+        <meta name="keywords" content="Keywords"/>
+        <link rel="manifest" href="/manifest.json"/>
+        <link href="/icons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
+        <link href="/icons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+        <link rel="apple-touch-icon" href="/apple-icon.png"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <title>FRC Scout</title>
+        <link rel="icon" href="/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png"/>
+        <meta name="next-head-count" content="13"/>
+        <link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous"/>
+        <link rel="preload" href="/_next/static/css/5a04735b8bace1f9.css" as="style"/>
+        <link rel="stylesheet" href="/_next/static/css/5a04735b8bace1f9.css" data-n-g=""/>
+        <noscript data-n-css=""></noscript>
+        <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+        <script src="/_next/static/chunks/webpack-8fa1640cc84ba8fe.js" defer=""></script>
+        <script src="/_next/static/chunks/framework-2c79e2a64abdb08b.js" defer=""></script>
+        <script src="/_next/static/chunks/main-20502ee4e1867e51.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/_app-232b89ab540627f3.js" defer=""></script>
+        <script src="/_next/static/chunks/836-9752474bafa26907.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/index-760db3bb5de6fe76.js" defer=""></script>
+        <script src="/_next/static/I9hT37dCzLcu0skhNW97H/_buildManifest.js" defer=""></script>
+        <script src="/_next/static/I9hT37dCzLcu0skhNW97H/_ssgManifest.js" defer=""></script>
+    </head>
+    <body>
+        <div id="__next">
+            <script>
+                !function() {
+                    try {
+                        var d = document.documentElement
+                          , c = d.classList;
+                        c.remove('light', 'dark');
+                        var e = localStorage.getItem('theme');
+                        if ('system' === e || (!e && true)) {
+                            var t = '(prefers-color-scheme: dark)'
+                              , m = window.matchMedia(t);
+                            if (m.media !== t || m.matches) {
+                                d.style.colorScheme = 'dark';
+                                c.add('dark')
+                            } else {
+                                d.style.colorScheme = 'light';
+                                c.add('light')
+                            }
+                        } else if (e) {
+                            c.add(e || '')
+                        }
+                        if (e === 'light' || e === 'dark')
+                            d.style.colorScheme = e
+                    } catch (e) {}
+                }()
+            </script>
+            <div class="min-h-screen py-2 dark:bg-white">
+                <main class="flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
+                    <h1 class="font-sans text-6xl">
+                        <div class="font-rhr text-black">Reefscape</div>
+                    </h1>
+                    <form class="w-full px-4">
+                        <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                            <div class="mb-4 rounded bg-gray-100 shadow-md">
+                                <div class="mb-2 rounded-t bg-red-rhr p-1 shadow-md">
+                                    <h2 class="font-rhr-ns text-2xl uppercase text-white">Prematch</h2>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2">
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Scouter 1 Name &amp;Initial</p>
+                                            <p class="mr-1 h-4 w-4 font-rhr text-red-rhr">!!</p>
+                                        </div>
+                                        <div>
+                                            <textarea class="focus:shadow-outline w-full appearance-none break-words break-all rounded border leading-tight text-gray-700 shadow focus:outline-none" name="Scouter 1 Name &amp; Initial_input" id="Scouter 1 Name &amp; Initial_input"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Scouter 2 Name &amp;Initial</p>
+                                            <p class="mr-1 h-4 w-4 font-rhr text-red-rhr">!!</p>
+                                        </div>
+                                        <div>
+                                            <textarea class="focus:shadow-outline w-full appearance-none break-words break-all rounded border leading-tight text-gray-700 shadow focus:outline-none" name="Scouter 2 Name &amp; Initial_input" id="Scouter 2 Name &amp; Initial_input"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Match Number</p>
+                                            <p class="mr-1 h-4 w-4 font-rhr text-red-rhr">!!</p>
+                                        </div>
+                                        <div>
+                                            <input class="w-full rounded py-2 dark:text-black" type="number" id="Match Number"/>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Robot</p>
+                                        </div>
+                                        <div>
+                                            <select class="w-full rounded bg-white px-4 py-2 dark:text-black" name="Robot" id="Robot">
+                                                <option value="R1" selected="">Red 1</option>
+                                                <option value="R2">Red 2</option>
+                                                <option value="R3">Red 3</option>
+                                                <option value="B1">Blue 1</option>
+                                                <option value="B2">Blue 2</option>
+                                                <option value="B3">Blue 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Team Number</p>
+                                            <p class="mr-1 h-4 w-4 font-rhr text-red-rhr">!!</p>
+                                        </div>
+                                        <div>
+                                            <input class="w-full rounded py-2 dark:text-black" type="number" id="Team Number"/>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">No Show</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="No Show"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Preload</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="Preload" checked=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 rounded bg-gray-100 shadow-md">
+                                <div class="mb-2 rounded-t bg-red-rhr p-1 shadow-md">
+                                    <h2 class="font-rhr-ns text-2xl uppercase text-white">Autonomous</h2>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2">
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Starting Location</p>
+                                        </div>
+                                        <div>
+                                            <select class="w-full rounded bg-white px-4 py-2 dark:text-black" name="Starting Location" id="Starting Location">
+                                                <option value="Processor">Processor Side</option>
+                                                <option value="middle">Middle</option>
+                                                <option value="The other side">Non Processor Side</option>
+                                                <option value="unsure" selected="">Not Observed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Leave?</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="Leave?"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral L1</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral L2</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral L3</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral L4</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Algae Processor</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Algae Removal</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Algae Shot</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 rounded bg-gray-100 shadow-md">
+                                <div class="mb-2 rounded-t bg-red-rhr p-1 shadow-md">
+                                    <h2 class="font-rhr-ns text-2xl uppercase text-white">Teleop</h2>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2">
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral L1</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral L2</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral L3</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral L4</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral Missed</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Algae Processor</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Algae Removal</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Algae Shot</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Where can it pick up coral?</p>
+                                        </div>
+                                        <div>
+                                            <select class="w-full rounded bg-white px-4 py-2 dark:text-black" name="Where can it pick up coral?" id="Where can it pick up coral?">
+                                                <option value="GROUND">Ground</option>
+                                                <option value="SOURCE">Source</option>
+                                                <option value="BOTH">Both</option>
+                                                <option value="NONE" selected="">Not Attempted</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 rounded bg-gray-100 shadow-md">
+                                <div class="mb-2 rounded-t bg-red-rhr p-1 shadow-md">
+                                    <h2 class="font-rhr-ns text-2xl uppercase text-white">Endgame</h2>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2">
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Attempted before 20 seconds</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="Attempted before 20 seconds"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Cage</p>
+                                        </div>
+                                        <div>
+                                            <select class="w-full rounded bg-white px-4 py-2 dark:text-black" name="Cage" id="Cage">
+                                                <option value="DEEP">Deep Cage</option>
+                                                <option value="SHALLOW">Shallow Cage</option>
+                                                <option value="PARK">Park</option>
+                                                <option value="NONE" selected="">Not Attempted</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Algae in Net</p>
+                                        </div>
+                                        <div>
+                                            <div class="my-2 flex flex-row items-center justify-center">
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl text-white hover:bg-blue-700 focus:outline-none" type="button">-</button>
+                                                <h2 class="px-4 text-2xl dark:text-black">0</h2>
+                                                <button class="focus:shadow-outline w-8 rounded bg-gray-500 text-2xl  text-white hover:bg-blue-700 focus:outline-none" type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Human Player At Net</p>
+                                        </div>
+                                        <div>
+                                            <textarea class="focus:shadow-outline w-full appearance-none break-words break-all rounded border leading-tight text-gray-700 shadow focus:outline-none" name="Human Player At Net_input" id="Human Player At Net_input"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 rounded bg-gray-100 shadow-md">
+                                <div class="mb-2 rounded-t bg-red-rhr p-1 shadow-md">
+                                    <h2 class="font-rhr-ns text-2xl uppercase text-white">Postmatch</h2>
+                                </div>
+                                <div class="flex flex-col justify-start gap-2">
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Driver Skill</p>
+                                        </div>
+                                        <div>
+                                            <select class="w-full rounded bg-white px-4 py-2 dark:text-black" name="Driver Skill" id="Driver Skill">
+                                                <option value="1">Not Effective</option>
+                                                <option value="2">Average</option>
+                                                <option value="3">Very Effective</option>
+                                                <option value="NONE" selected="">Not Observed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Defense Rating</p>
+                                        </div>
+                                        <div>
+                                            <select class="w-full rounded bg-white px-4 py-2 dark:text-black" name="Defense Rating" id="Defense Rating">
+                                                <option value="1">Not Effective</option>
+                                                <option value="2">Average</option>
+                                                <option value="3">Very Effective</option>
+                                                <option value="NONE" selected="">Not Observed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Robot Problems</p>
+                                        </div>
+                                        <div>
+                                            <select class="w-full rounded bg-white px-4 py-2 dark:text-black" name="Robot Problems" id="Robot Problems">
+                                                <option value="TIPPED?OVER">Tipped Over</option>
+                                                <option value="DIED">Died (Comments)</option>
+                                                <option value="BOTH">Both</option>
+                                                <option value="NONE" selected="">None</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Yellow/Red Card</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="Yellow/Red Card"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Penalty Points</p>
+                                        </div>
+                                        <div>
+                                            <textarea class="focus:shadow-outline w-full appearance-none break-words break-all rounded border leading-tight text-gray-700 shadow focus:outline-none" name="Penalty Points_input" id="Penalty Points_input">0</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coopertition Bonus</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="Coopertition Bonus"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Auto RP</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="Auto RP"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Coral RP</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="Coral RP"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Barge RP</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="Barge RP"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Win/Loss</p>
+                                        </div>
+                                        <div>
+                                            <select class="w-full rounded bg-white px-4 py-2 dark:text-black" name="Win/Loss" id="Win/Loss">
+                                                <option value="UNSURE" selected="">Not Observed</option>
+                                                <option value="WIN">Win</option>
+                                                <option value="LOSS">Loss</option>
+                                                <option value="TIE">Tie</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">All information is accurate</p>
+                                        </div>
+                                        <div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input m-2 h-5 w-9 cursor-pointer appearance-none rounded-full bg-gray-300 bg-contain bg-no-repeat align-top shadow-sm focus:outline-none" type="checkbox" role="switch" id="All information is accurate" checked=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mx-1 rounded bg-white leading-tight shadow-sm">
+                                        <div class="flex flex-row justify-between rounded-t bg-gray-300">
+                                            <p class="pl-2 text-left text-xs font-bold uppercase dark:text-black">Comments</p>
+                                        </div>
+                                        <div>
+                                            <textarea class="focus:shadow-outline w-full appearance-none break-words break-all rounded border leading-tight text-gray-700 shadow focus:outline-none" name="Comments_input" id="Comments_input"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4 flex flex-col justify-center rounded bg-white py-2 shadow-md">
+                                <button class="focus:shadow-outline mx-2 rounded bg-gray-700 py-6 px-6 font-bold uppercase text-white hover:bg-gray-700 focus:shadow-lg focus:outline-none disabled:bg-gray-300" type="button" disabled="">Submit</button>
+                                <button class="focus:shadow-outline mx-2 my-6 rounded border border-red-rhr bg-white py-2 font-bold uppercase text-red-rhr hover:bg-red-200 focus:outline-none" type="button">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </main>
+                <footer></footer>
+            </div>
+        </div>
+        <script id="__NEXT_DATA__" type="application/json">
+            {
+                "props": {
+                    "pageProps": {
+                    }
+                },
+                "page": "/",
+                "query": {
+                },
+                "buildId": "I9hT37dCzLcu0skhNW97H",
+                "nextExport": true,
+                "autoExport": true,
+                "isFallback": false,
+                "scriptLoader": [
+                ]
+            }</script>
+    </body>
+</html>
 
