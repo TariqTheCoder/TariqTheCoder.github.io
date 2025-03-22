@@ -86,9 +86,10 @@ button,input,optgroup,select,textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: inherit;
-    color: darkgrey;
+    color: white; /* Changed text color to white for better contrast */
     margin: 0;
-    padding: 0
+    padding: 0;
+    background-color: darkred; /* Added dark red background for all form elements */
 }
 
 button,select {
@@ -97,7 +98,7 @@ button,select {
 
 [type=button],[type=reset],[type=submit],button {
     -webkit-appearance: button;
-    background-color: transparent;
+    background-color: darkred; /* Dark red background for buttons */
     background-image: none
 }
 
@@ -158,11 +159,11 @@ textarea {
 }
 
 input::-moz-placeholder,textarea::-moz-placeholder {
-    color: #9ca3af
+    color: rgba(255, 255, 255, 0.7); /* Light gray placeholder text for better readability */
 }
 
 input::placeholder,textarea::placeholder {
-    color: #9ca3af
+    color: rgba(255, 255, 255, 0.7); /* Light gray placeholder text for better readability */
 }
 
 [role=button],button {
@@ -191,7 +192,7 @@ img,video {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: #fff;
+    background-color: darkred; /* Dark red background for all input types */
     border-color: #6b7280;
     border-width: 1px;
     border-radius: 0;
@@ -215,12 +216,12 @@ img,video {
 }
 
 input::-moz-placeholder,textarea::-moz-placeholder {
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.7); /* Light gray placeholder text for better readability */
     opacity: 1
 }
 
 input::placeholder,textarea::placeholder {
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.7); /* Light gray placeholder text for better readability */
     opacity: 1
 }
 
@@ -238,7 +239,7 @@ input::placeholder,textarea::placeholder {
 }
 
 select {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e"); /* Changed arrow color to white */
     background-position: right .5rem center;
     background-repeat: no-repeat;
     background-size: 1.5em 1.5em;
@@ -274,7 +275,7 @@ select {
     height: 1rem;
     width: 1rem;
     color: #2563eb;
-    background-color: #fff;
+    background-color: darkred; /* Dark red background for checkboxes and radios */
     border-color: #6b7280;
     border-width: 1px;
     --tw-shadow: 0 0 #0000
