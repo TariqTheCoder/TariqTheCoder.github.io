@@ -32,29 +32,19 @@
     <body>
         <div id="__next">
             <script>
-                !function() {
-                    try {
-                        var d = document.documentElement
-                          , c = d.classList;
-                        c.remove('light', 'dark');
-                        var e = localStorage.getItem('theme');
-                        if ('system' === e || (!e && true)) {
-                            var t = '(prefers-color-scheme: dark)'
-                              , m = window.matchMedia(t);
-                            if (m.media !== t || m.matches) {
-                                d.style.colorScheme = 'dark';
-                                c.add('dark')
-                            } else {
-                                d.style.colorScheme = 'light';
-                                c.add('light')
-                            }
-                        } else if (e) {
-                            c.add(e || '')
-                        }
-                        if (e === 'light' || e === 'dark')
-                            d.style.colorScheme = e
-                    } catch (e) {}
-                }()
+!function() {
+    try {
+        var d = document.documentElement,
+            c = d.classList;
+        
+        // Remove any existing light or dark classes
+        c.remove('light', 'dark');
+        
+        // Always apply the dark theme
+        d.style.colorScheme = 'dark';
+        c.add('dark');
+    } catch (e) {}
+}()
             </script>
             <div class="min-h-screen py-2 dark:bg-white">
                 <main class="flex w-full flex-1 flex-col items-center justify-center px-4 text-center">
