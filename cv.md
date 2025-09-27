@@ -1,6 +1,4 @@
 
-**Back to website: https://tariqthecoder.github.io/**
-
 # Curriculum Vitae: Tariq Tayebi - 2025
 
 ## Technical Skills
