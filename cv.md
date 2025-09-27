@@ -1,14 +1,9 @@
 ---
-title: CV
-layout: default
----
-
----
 title: CV - Tariq Tayebi
 layout: default
 ---
-Back to website: https://tariqthecoder.github.io/
-
+**Back to website: https://tariqthecoder.github.io/
+**
 # Curriculum Vitae: Tariq Tayebi - 2025
 
 ## Technical Skills
