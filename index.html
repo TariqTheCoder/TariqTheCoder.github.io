@@ -31,6 +31,75 @@
             overflow-x: hidden;
         }
         
+        /* Top Banner */
+        .top-banner {
+            background: linear-gradient(135deg, rgba(0, 255, 153, 0.08) 0%, rgba(0, 204, 255, 0.05) 100%);
+            text-align: center;
+            padding: 12px 20px;
+            border-bottom: 1px solid rgba(0, 255, 153, 0.15);
+            font-size: 0.9rem;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        
+        .top-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 153, 0.1), transparent);
+            animation: bannerShine 4s ease-in-out infinite;
+        }
+        
+        @keyframes bannerShine {
+            0%, 100% { left: -100%; }
+            50% { left: 100%; }
+        }
+        
+        .top-banner p {
+            margin: 0;
+            color: var(--text);
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .top-banner .emoji {
+            display: inline-block;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        
+        .top-banner a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 4px;
+            background: rgba(0, 255, 153, 0.1);
+            border: 1px solid rgba(0, 255, 153, 0.3);
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .top-banner a:hover {
+            color: var(--dark);
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 255, 153, 0.3);
+        }
+        
         code, .code {
             font-family: 'Fira Code', monospace;
         }
@@ -416,6 +485,10 @@
 
 <div class="bg-animation"></div>
 
+<div class="top-banner">
+    <p><span class="emoji">🤖</span> Looking for my FTC team? <a href="https://usually-functional-ftc.github.io" target="_blank">Click here</a></p>
+</div>
+
 <header>
     <h1>TariqTheCoder</h1>
     <p class="subtitle">High School Developer | Technological Enthusiast | Medicine Researcher</p>
@@ -496,7 +569,6 @@
             </div>
         </div>
 
-    </div>
     </div>
 </section>
 
