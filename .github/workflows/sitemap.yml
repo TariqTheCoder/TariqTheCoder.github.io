@@ -1,18 +1,28 @@
 name: Generate sitemap
+
 on:
   push:
-    branches: [ main ]  # Change to 'gh-pages' if that's your Pages branch
+    branches: [ main ]  # change if your Pages branch is different
+
 jobs:
   sitemap:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write    # allow pushing sitemap back to the repo
+
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
     - name: Generate sitemap
-      uses: cicirello/generate-sitemap@v1  # Correct tag
+      uses: cicirello/generate-sitemap@v1
       with:
-        args: -o static  # Outputs sitemap.xml to repo root
+        base-url: https://tariqthecoder.github.io
+        sitemap-path: sitemap.xml   # output at repo root
+
     - name: Commit sitemap
-      uses: stefanzweifel/git-auto-commit-action@v5  # Correct push action
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "chore: regenerate sitemap"
         file_pattern: sitemap.xml
