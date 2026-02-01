@@ -1,0 +1,18 @@
+name: Generate sitemap
+on:
+  push:
+    branches: [ main ]  # Change to 'gh-pages' if that's your Pages branch
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Generate sitemap
+      uses: cicirello/generate-sitemap@v1  # Correct tag
+      with:
+        args: -o static  # Outputs sitemap.xml to repo root
+    - name: Commit sitemap
+      uses: stefanzweifel/git-auto-commit-action@v5  # Correct push action
+      with:
+        commit_message: "chore: regenerate sitemap"
+        file_pattern: sitemap.xml
