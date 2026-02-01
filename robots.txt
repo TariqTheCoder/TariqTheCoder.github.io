@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tariqthecoder.github.io/sitemap-0.xml
+Sitemap: https://tariqthecoder.github.io/sitemap.xml
