@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-	xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-	xmlns:xhtml="http://www.w3.org/1999/xhtml"
-	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-	xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-	<url>
-		<loc>https://tariqthecoder.github.io/</loc>
-	</url>
-	<url>
-		<loc>https://tariqthecoder.github.io/Tactical-Grid/</loc>
-	</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://web.address.of.your.nifty.website/</loc>
+<lastmod>2026-02-01T21:25:41+11:00</lastmod>
+</url>
+<url>
+<loc>https://web.address.of.your.nifty.website/2026-Battlecode-Postmortem.pdf</loc>
+<lastmod>2026-02-01T21:25:41+11:00</lastmod>
+</url>
+<url>
+<loc>https://web.address.of.your.nifty.website/googlee629b7bdaa6913a0.html</loc>
+<lastmod>2026-02-01T21:25:41+11:00</lastmod>
+</url>
 </urlset>
