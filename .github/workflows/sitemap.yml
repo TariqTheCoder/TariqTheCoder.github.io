@@ -1,0 +1,15 @@
+name: Generate sitemap
+on:
+  push:
+    branches: [ main ]  # or 'gh-pages' if using that branch
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: cicirello/generate-sitemap@v1.0.3
+      env:
+        OUTPUT: static  # outputs to /sitemap.xml in repo root
+    - uses: cicirello/push-action@v1.5.0
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
